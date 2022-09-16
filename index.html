@@ -1,3 +1,5 @@
+<!--RECUERDA SIEMPRE COMENTAR TU CODIGO PARA TENER COMO RECORDATORIO O FORMA EXPLICATIVA A TERCEROS-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,50 +10,62 @@
     <title>El blog de DeveloperBoy</title>
 </head>
 
+
 <body>
 
     <header>
-
+        <!--Un buen programador web debe saber aplicar las semanticas de cada posible etiqueta a usar en un 
+         proyecto   
+        -->
         <nav>
+            <!--El atributo open indica que al refrescar la pagina el indice estara abierto-->
+            <details open>
+                <summary>
+                    Setup
+                </summary>
+                <ol>
+                    <li>
+                        <a href="#google-chrome">Google Chrome</a>
+                    </li>
+                    <li>
+                        <a href="#vsc">Visual Studio Code</a>
+                    </li>
+                    <li>
+                        <a href="#figma">Figma</a>
+                    </li>
+                    <li>
+                        <a href="#github">GitHub</a>
+                    </li>
+                </ol>
+            </details>
 
-            <p>Setup</p>
-            <ol>
-                <li>
-                    Google Chrome
-                </li>
-                <li>
-                    Visual Studio Code
-                </li>
-                <li>
-                    Figma
-                </li>
-                <li>
-                    GitHub
-                </li>
-            </ol>
+            <details>
+                <summary>
+                    Conceptos esenciales del Desarrollo Web
 
-            <p>Conceptos esenciales del Desarrollo Web</p>
+                </summary>
+                <ol>
+                    <li>
+                        <a href="#html">QUE ES HTML</a>
+                    </li>
+                    <li>
+                        <a href="#etiquetas">Etiquetas</a>
+                    </li>
+                    <li>
+                        <a href="#dom">DOM</a>
+                    </li>
+                    <li>
+                        <a href="#semantica">Semántica</a>
+                    </li>
+                    <li>
+                        <a href="#atributos">Atributos</a>
+                    </li>
+                    <li>
+                        <a href="#css">Qué es CSS</a>
+                    </li>
+                </ol>
+            </details>
 
-            <ol>
-                <li>
-                    Qué es HTML
-                </li>
-                <li>
-                    Etiquetas
-                </li>
-                <li>
-                    DOM
-                </li>
-                <li>
-                    Semántica
-                </li>
-                <li>
-                    Atributos
-                </li>
-                <li>
-                    Qué es CSS
-                </li>
-            </ol>
         </nav>
     </header>
     <h1>Curso esencial de HTML y CSS</h1>
@@ -59,21 +73,21 @@
         contenidos, en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
     <hr>
     <h2>Setup</h2>
-    <img src="img/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
+    <img src="/img/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome">
 
 
 
 
-    <h3>1. Google Chrome</h3>
+    <h3 id="google-chrome">1. Google Chrome</h3>
 
     <p>
         Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
         herramientas de desarrollo avanzadas y de amigable uso.
     </p>
 
-    <img src="img/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
+    <img src="/img/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code">
 
-    <h3>2. Visual Studio Code</h3>
+    <h3 id="vsc">2. Visual Studio Code</h3>
 
     <p>
         Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la
@@ -81,16 +95,16 @@
         importar el lenguaje en el que se desemvuelva.
     </p>
 
-    <img src="img/figma.png" alt="Logo Figma" title="Logo de Figma">
-    <h3>3. Figma</h3>
+    <img src="/img/figma.png" alt="Logo Figma" title="Logo de Figma">
+    <h3 id="figma">3. Figma</h3>
 
     <p>
         Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su
         implementación por su fácil uso porque puede ser usado directamente desde el navegador.
     </p>
 
-    <img src="img/github.png" alt="Logo de GitHub" title="Logo de GitHub">
-    <h3>4. GitHub</h3>
+    <img src="/img/github.png" alt="Logo de GitHub" title="Logo de GitHub">
+    <h3 id="github">4. GitHub</h3>
 
     <p>
         Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de
@@ -102,14 +116,39 @@
 
     <h2>Conceptos esenciales del Desarrollo Web</h2>
 
-    <h3>1. Qué es HTML</h3>
+    <h3 id="html">1. Qué es HTML</h3>
 
     <p>
         Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el
         significado y la estructura del contenido.
+        <!--La etiqueta code sirve para insertar pequeñas partes de codigo demostrativo en la pagina-->
+        <code> &lt;h2&gt;Conceptos esenciales del Desarrollo Web&lt;/h2&gt;</code>
     </p>
 
-    <h2>2. Etiquetas</h2>
+    <!--Para insertar codigo mas extenso se usa la etiqueta pre, estas dos visualmente solo cambian la fuente 
+    pero semanticamente nuestra pagina sera mas rica-->
+    <pre>
+        <!--En html hay algo que se llama entidades lo cual remplazara los caracteres que son reconocidos por el
+        lenguaje para que los omita y los acepte como codigo demostrativo--> 
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+    &lt;/body&gt;
+    &lt;/html&gt;
+    <!--Para evitar la fatiga usa alguna pagina que le de el formato por ti como esta
+    https://www.freeformatter.com/html-escape.html#before-output-->
+    </pre>
+
+
+
+    <h2 id="etiquetas">2. Etiquetas</h2>
 
     <p>
         Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada
@@ -123,7 +162,7 @@
         de tu día a día como Software Developer.
     </p>
 
-    <h3>3. DOM</h3>
+    <h3 id="dom">3. DOM</h3>
 
     <p>
         El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un
@@ -131,9 +170,9 @@
         identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.
     </p>
 
-    <img src="img/dom.png" alt="Estructura de arbol que representa al Document Object Model">
+    <img src="/img/dom.png" alt="Estructura de arbol que representa al Document Object Model">
 
-    <h3>4. Semántica</h3>
+    <h3 id="semantica">4. Semántica</h3>
 
     <p>
         La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente
@@ -144,7 +183,7 @@
         diferentes puedan entender cada contenido.
     </p>
 
-    <h3>5. Atributos</h3>
+    <h3 id="atributos">5. Atributos</h3>
 
     <p>
         Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas
@@ -152,14 +191,14 @@
         atributos funcionan en solo alguna etiquetas como src
     </p>
 
-    <h3>6. CSS</h3>
+    <h3 id="css">6. CSS</h3>
 
     <p>
         Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para
         describir la presentación de documentos HTML
     </p>
 
-    <img src="img/css.png" alt="Logo de CSS">
+    <img src="/img/css.png" alt="Logo de CSS">
 
     <h2>Modelo de Caja</h2>
     <h3>El modelo de caja está compuesto por:</h3>
@@ -184,10 +223,20 @@
     </ul>
 
     <h3>Propiedades lógicas para el modelo de caja:</h3>
+    <ul>
         <li>inline-size / block-size</li>
-        <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
-        <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
-        <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
+        <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start |
+            margin-inline-end</li>
+        <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start |
+            border-inline-end</li>
+        <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start |
+            padding-inline-end</li>
+    </ul>
+
+    <p>Si tienes alguna pregunta escríbeme a <a
+            href="mailto:amantesdelcodigo26@gmail.com">amantesdelcodigo26@gmail.com</a></p>
+
+    <a href="mailto:amantesdelcodigo26@gmail.com"></a>
 </body>
 
 </html>
