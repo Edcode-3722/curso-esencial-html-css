@@ -31,11 +31,13 @@
     --gray30: #212121;
     --gray20: #212429; 
     --gray10: #616161;
+    --yellow: #FEC62E;
 }
 
 body{
     color: var(--gray30);
-    font-family: charter;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: charter;*/
 }
 
 
@@ -51,6 +53,18 @@ h2{
 
 h3{
     font-size: 1.5em;
+}
+
+h3::before{
+    content: '-';
+}
+
+h3::after{
+    content: '';
+    width: 32px;
+    height: 4px;
+    background: var(--gray30);
+    display: inline-block;
 }
 
 header{
@@ -69,4 +83,15 @@ header a:hover{
 
 nav details summary{
     font-weight: bold;
+}
+
+pre{
+    background: var(--yellow);
+}
+
+.hero{
+    
+    height: 350px;
+    background-image: linear-gradient(to top, rgba(255,255,255, .3), transparent 50%), url('../img/patron-1.png');
+    
 }
